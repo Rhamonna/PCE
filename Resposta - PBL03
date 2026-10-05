@@ -1,0 +1,223 @@
+# 🧩 PBL 03 — É Possível Resolver Este Processo?
+
+Aluna: RHAMONNA EMANUELLE NEGREIROS BEZERRA PEDROSA
+-----------------------------------------------------------------------------------------------------------------------------
+
+## 📚 Disciplina
+
+**Princípios e Cálculos da Engenharia**
+
+## 🎯 Tema
+
+Grau de Liberdade e Estratégias de Resolução**
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# 1. Situação-Problema
+
+A alimentação possui:
+
+- 60% H₂O
+- 25% etanol
+- 15% metanol
+
+A unidade possui duas correntes de saída:
+
+- Corrente 1:** 500 kg/h, composição desconhecida;
+- Corrente 2:** composição de 30% H₂O, 40% etanol e 30% metanol, vazão desconhecida.
+
+A vazão da alimentação é inicialmente desconhecida.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+# 2. Representação do Processo
+
+Alimentação
+F = desconhecida
+60% H₂O | 25% EtOH | 15% MeOH
+            |
+            ↓
+      +-------------+
+      |   Processo   |
+      +-------------+
+        ↙         ↘
+       ↓           ↓
+Corrente 1     Corrente 2
+500 kg/h       S₂ = ?
+Composição ?   30% H₂O
+               40% EtOH
+               30% MeOH
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ # 3. Variáveis e Equações
+
+ As incógnitas independentes são:
+
+ - F = vazão da alimentação;
+- S₂ = vazão da Corrente 2;
+- x₁,H₂O = fração de água da Corrente 1;
+- x₁,EtOH = fração de etanol da Corrente 1.
+
+ A fração de metanol é:
+
+x₁,MeOH = 1 - x₁,H₂O - x₁,EtOH
+
+ Balanços:
+
+F = 500 + S₂
+
+0,60F = 500x₁,H₂O + 0,30S₂
+
+0,25F = 500x₁,EtOH + 0,40S₂
+
+0,15F = 500x₁,MeOH + 0,30S₂
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ # 4. Grau de Liberdade Inicial
+
+ Existem **4 incógnitas** e **3 equações independentes**.
+
+GL = 4 - 3
+
+GL = 1
+
+ ### Resultado
+
+ > Problema subdeterminado.
+
+ É necessária uma informação adicional.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ # 5. Nova Informação — Vazão da Alimentação
+
+ Foi informado:
+
+F = 2.000 kg/h
+
+ Pelo balanço global:
+
+2.000 = 500 + S₂
+
+S₂ = 1.500 kg/h
+
+ Agora existem **3 incógnitas e 3 equações independentes**:
+
+GL = 3 - 3 = 0
+
+ > Sistema matematicamente determinado.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ # 6. Nova Informação — 50% de Água na Corrente 1
+
+ Foi informado:
+
+x₁,H₂O = 0,50
+
+ Logo:
+
+mH₂O,C1 = 0,50 × 500
+
+mH₂O,C1 = 250 kg/h
+
+ A alimentação possui:
+
+0,60 × 2.000 = 1.200 kg/h de H₂O
+
+ Portanto, pelo balanço, a Corrente 2 deveria possuir:
+
+1.200 - 250 = 950 kg/h de H₂O
+
+ Porém, sua composição indica:
+
+0,30 × 1.500 = 450 kg/h de H₂O
+
+ Como:
+
+950 ≠ 450
+
+ os dados são incompatíveis.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ # 7. Verificação dos Componentes
+
+ ### Água
+
+Entrada = 1.200 kg/h
+Saída informada = 250 + 450 = 700 kg/h
+
+ > ❌ Balanço inconsistente.
+
+ ### Etanol
+
+Entrada = 0,25 × 2.000 = 500 kg/h
+
+Corrente 2 = 0,40 × 1.500 = 600 kg/h
+
+ Isso resultaria em:
+
+mEtOH,C1 = 500 - 600 = -100 kg/h
+
+ > ❌ Resultado fisicamente impossível.
+
+ ### Metanol
+
+Entrada = 0,15 × 2.000 = 300 kg/h
+
+Corrente 2 = 0,30 × 1.500 = 450 kg/h
+
+ Logo:
+
+mMeOH,C1 = 300 - 450 = -150 kg/h
+
+ > ❌ Resultado fisicamente impossível.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ # 8. Reflexão
+
+ ### Por que analisar o grau de liberdade antes dos cálculos?
+
+ Porque ele permite verificar se existem informações suficientes para determinar as incógnitas.
+
+ ### O que o grau de liberdade indica?
+
+ - GL \> 0: faltam informações;
+- GL = 0: sistema determinado matematicamente;
+- GL \< 0: existem mais restrições que incógnitas.
+
+ ### Uma solução matemática pode ser fisicamente impossível?
+
+Sim. Neste problema, mesmo com `GL = 0`, foram obtidas vazões negativas de componentes.
+
+ Por isso, os resultados devem sempre ser comparados com as condições físicas do processo.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ # 🏁 Conclusão
+
+ Inicialmente:
+
+GL = 1 → Subdeterminado
+
+ Após informar a vazão da alimentação:
+
+F = 2.000 kg/h
+GL = 0
+
+ A Corrente 2 foi determinada como:
+
+S₂ = 1.500 kg/h
+
+ Entretanto, a informação de que a Corrente 1 possui **50% de água** revelou uma inconsistência nos dados.
+
+ Portanto:
+
+ > O grau de liberdade mostra se existem informações suficientes para resolver um problema, mas a verificação dos balanços é necessária para confirmar se a solução é fisicamente válida.
+
+ Resposta à pergunta central: antes de realizar os cálculos, devemos identificar as incógnitas, as equações independentes e o grau de liberdade. Em seguida, devemos verificar se os resultados são fisicamente coerentes.
+-----------------------------------------------------------------------------------------------------------------------------
