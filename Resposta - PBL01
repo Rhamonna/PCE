@@ -1,0 +1,155 @@
+Claro. Para o GitHub, você pode usar `---` como separador horizontal entre as seções. Aqui está o conteúdo já formatado dessa maneira:
+
+ PBL 01 - Markdown para GitHub com separadores
+
+# PBL 01 - Quantificando a Matéria em uma Corrente de Processo
+
+ **RHAMONNA EMANUELLE NEGREIROS BEZERRA PEDROSA**
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ## Introdução
+
+ Em processos industriais, a água é medida em uma escala macroscópica, normalmente por sua massa ou vazão mássica. Para determinar quantas moléculas passam pela unidade, é necessário converter a massa em quantidade de matéria, usando o **mol** como ligação entre as escalas macroscópica e microscópica.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ## Dados do problema
+
+ - **Vazão mássica:** 180 kg/h
+- **Tempo de operação:** 8 h/dia
+- **Massa atômica do H:** 1 g/mol
+- **Massa atômica do O:** 16 g/mol
+- **Número de Avogadro:** 6,022 × 10²³ entidades/mol
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ## Cálculos
+
+ ### 1\. Massa molar da água
+
+ A molécula de água, **H₂O**, possui dois átomos de hidrogênio e um átomo de oxigênio. Portanto, sua massa molar é:
+
+
+M(H₂O) = 2(1) + 1(16)
+M(H₂O) = 18 g/mol
+
+
+ Convertendo para quilogramas:
+
+
+18 g/mol = 0,018 kg/mol
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ### 2\. Vazão molar
+
+ A vazão molar é obtida dividindo-se a vazão mássica pela massa molar:
+
+
+ṅ = ṁ / M
+
+
+ Substituindo os valores:
+
+
+ṅ = 180 kg/h / 0,018 kg/mol
+ṅ = 10.000 mol/h
+
+
+ Assim, entram no processo **10.000 mol de água por hora**.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ### 3\. Quantidade de matéria processada em um dia
+
+ Durante as 8 horas de operação diária, a quantidade de matéria processada é:
+
+
+n = ṅ × t
+
+n = 10.000 mol/h × 8 h
+
+n = 80.000 mol/dia
+
+
+ Portanto:
+
+ > **80.000 mol de água são processados por dia.**
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ### 4\. Massa total processada
+
+ A massa total correspondente também pode ser verificada:
+
+
+m = 180 kg/h × 8 h
+
+m = 1.440 kg/dia
+
+
+ Portanto:
+
+ > **1.440 kg de água são processados por dia.**
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ### 5\. Número de moléculas
+
+ Finalmente, o número de moléculas é calculado pelo produto entre a quantidade de matéria e o número de Avogadro:
+
+
+N = n × Nₐ
+
+
+ Substituindo os valores:
+
+
+N = 80.000 mol × 6,022 × 10²³ moléculas/mol
+
+N = 4,8176 × 10²⁸ moléculas/dia
+
+
+ Portanto:
+
+ > **Aproximadamente 4,82 × 10²⁸ moléculas de água passam pela unidade durante um dia de operação de 8 horas.**
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ## Importância do mol na Engenharia
+
+ A indústria mede matérias-primas em **kg/h** porque massa e vazão são grandezas macroscópicas que podem ser medidas diretamente por balanças e instrumentos industriais.
+
+ Entretanto, as transformações químicas acontecem entre **átomos, moléculas e íons**, em proporções determinadas pelas equações químicas. Por isso, conhecer somente a massa não é suficiente para analisar reações.
+
+ O **mol** funciona como uma ponte entre essas duas escalas. Ele permite converter uma massa mensurável em quantidade de matéria e, consequentemente, no número de partículas presentes.
+
+ Trabalhar com **mol/h** possibilita:
+
+ - Comparar correntes de substâncias diferentes com base no número de entidades químicas;
+- Realizar balanços materiais;
+- Calcular proporções estequiométricas;
+- Identificar reagentes limitantes;
+- Estimar consumo;
+- Determinar produção;
+- Avaliar o rendimento de processos.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ ## Conclusão técnica
+
+ Uma vazão de **180 kg/h de água** corresponde a **10.000 mol/h**.
+
+ Em 8 horas, são processados:
+
+ - **1.440 kg de água**;
+- **80.000 mol de água**;
+- Aproximadamente **4,82 × 10²⁸ moléculas de H₂O**.
+
+ Assim, enquanto **kg/h** representa a quantidade de massa movimentada pelo equipamento, **mol/h** representa a quantidade de entidades químicas disponível para participar do processo.
+
+ O uso conjunto dessas grandezas é fundamental para relacionar as **medições industriais às transformações moleculares** e realizar corretamente a análise de processos químicos.
+
+-----------------------------------------------------------------------------------------------------------------------------
